@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:gravity="center"
+            android:text="聊天机器人"
+            android:textColor="@color/textcolor" />
+
+        <TextView
+            android:id="@+id/jiqi_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.44"
+            android:gravity="center"
+            android:hint="回复的内容"
+            android:textColor="@color/qijicolor"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:gravity="center"
+            android:text="我"
+            android:textColor="@color/textcolor"
+            />
+
+        <TextView
+            android:id="@+id/me_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.44"
+            android:hint="我问的问题"
+            android:gravity="center"
+            android:textColor="@color/mecolor"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textColor="@color/textcolor" />
+
+        <Button
+            android:id="@+id/sendbtn"
+            android:layout_width="30dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/send_btn_normal"
+            android:text="@string/send"
+            android:textColor="@color/textcolor" />
+    </LinearLayout>
+</RelativeLayout>
